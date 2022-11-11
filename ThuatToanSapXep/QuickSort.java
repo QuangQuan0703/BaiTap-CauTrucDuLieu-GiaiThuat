@@ -5,7 +5,7 @@ public class QuickSort {
     public QuickSort(int [] arr){
         this.arr = arr;
     }
-    public int Sort (int low, int hight){
+    public void Sort (int low, int hight){
         int i = low;
         int j = hight;
         int povit = arr[hight];
@@ -25,18 +25,11 @@ public class QuickSort {
                 j--;
             }
         }
-        return j;
-    }
-    public void quickSort(int low, int hight){
         if (low < hight){
-            int povit = Sort(low,hight);
-            int povit1 = Sort(low,hight) + 1;
-            quickSort(low, povit);
-            quickSort(povit1 , hight);
+            Sort(low, j);
+            Sort(i, hight);
         }
-        if(low >= hight){
-            return;
-        }
+
     }
     public void print(){
         System.out.println("Quick Sort");
