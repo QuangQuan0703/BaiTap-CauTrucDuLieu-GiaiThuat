@@ -1,6 +1,6 @@
 package Queue_Stack;
 
-public interface StackInterface<E>{
+public interface StackInterface<E> {
     public void push(E element);
     public E pop();
     public int size();
