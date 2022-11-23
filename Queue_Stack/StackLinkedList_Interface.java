@@ -1,10 +1,9 @@
 package Queue_Stack;
-
-public interface StackInterface<E> {
+import java.lang.Iterable;
+public interface StackLinkedList_Interface<E> extends Iterable<E> {
     public void push(E element);
     public E pop();
-    public int size();
     public boolean isEmpty();
     public E top();
+    public int size();
 }
-

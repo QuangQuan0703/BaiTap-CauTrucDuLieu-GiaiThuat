@@ -1,6 +1,6 @@
 package Queue_Stack;
 
-public class StackArr<E> implements StackInterface<E>{
+public class StackArr<E> implements StackArr_Interface<E> {
     public static final int CAPACITY = 1000;
     private E[] data;
     private int t = -1;
